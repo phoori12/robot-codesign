@@ -1,107 +1,117 @@
 <mujoco model="rrl_tracked_4flipper">
   <compiler angle="radian"/>
+   <default>
+    <!-- Robot 1 Default Group (Uses Bit 1) -->
+    <default class="robot">
+      <!-- contype="2" (Bit 1): I am Robot 1 -->
+      <!-- conaffinity="1" (Bit 0): I only listen to the environment -->
+      <!-- Change conaffinity="3" (Bits 0 and 1) if you WANT self-collisions for Robot 1 -->
+      <geom contype="2" conaffinity="1" />
+    </default>
+  </default>
 
   <worldbody>
-    <body name="base_link">
+    <body name="base_link" childclass="robot" pos="0 0 0.15">
+      <freejoint/>
       <inertial pos="0 0 0.045" quat="0 0.707107 0 0.707107" mass="25" diaginertia="1.08333 0.810208 0.393542"/>
       <geom size="0.3 0.2 0.085" pos="0 0 0.045" type="box"/>
       <body name="left_track_wheel_0" pos="-0.25 0.24 0">
         <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.3" diaginertia="0.001215 0.000767 0.000767"/>
-        <joint name="left_track_wheel_0_joint" axis="0 1 0"/>
+        <joint name="left_track_wheel_0_joint" axis="0 1 0 " armature="0.05"/>
         <geom size="0.09 0.04" quat="0.707105 0.707108 0 0" type="cylinder"/>
       </body>
       <body name="left_track_wheel_1" pos="-0.15 0.24 0">
         <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.3" diaginertia="0.001215 0.000767 0.000767"/>
-        <joint name="left_track_wheel_1_joint" axis="0 1 0"/>
+        <joint name="left_track_wheel_1_joint" axis="0 1 0" armature="0.05"/>
         <geom size="0.09 0.04" quat="0.707105 0.707108 0 0" type="cylinder"/>
       </body>
       <body name="left_track_wheel_2" pos="-0.05 0.24 0">
         <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.3" diaginertia="0.001215 0.000767 0.000767"/>
-        <joint name="left_track_wheel_2_joint" axis="0 1 0"/>
+        <joint name="left_track_wheel_2_joint" axis="0 1 0" armature="0.05"/>
         <geom size="0.09 0.04" quat="0.707105 0.707108 0 0" type="cylinder"/>
       </body>
       <body name="left_track_wheel_3" pos="0.05 0.24 0">
         <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.3" diaginertia="0.001215 0.000767 0.000767"/>
-        <joint name="left_track_wheel_3_joint" axis="0 1 0"/>
+        <joint name="left_track_wheel_3_joint" axis="0 1 0" armature="0.05"/>
         <geom size="0.09 0.04" quat="0.707105 0.707108 0 0" type="cylinder"/>
       </body>
       <body name="left_track_wheel_4" pos="0.15 0.24 0">
         <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.3" diaginertia="0.001215 0.000767 0.000767"/>
-        <joint name="left_track_wheel_4_joint" axis="0 1 0"/>
+        <joint name="left_track_wheel_4_joint" axis="0 1 0" armature="0.05"/>
         <geom size="0.09 0.04" quat="0.707105 0.707108 0 0" type="cylinder"/>
       </body>
       <body name="left_track_wheel_5" pos="0.25 0.24 0">
         <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.3" diaginertia="0.001215 0.000767 0.000767"/>
-        <joint name="left_track_wheel_5_joint" axis="0 1 0"/>
+        <joint name="left_track_wheel_5_joint" axis="0 1 0" armature="0.05"/>
         <geom size="0.09 0.04" quat="0.707105 0.707108 0 0" type="cylinder"/>
       </body>
       <body name="right_track_wheel_0" pos="-0.25 -0.24 0">
         <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.3" diaginertia="0.001215 0.000767 0.000767"/>
-        <joint name="right_track_wheel_0_joint" axis="0 1 0"/>
+        <joint name="right_track_wheel_0_joint" axis="0 1 0" armature="0.05"/>
         <geom size="0.09 0.04" quat="0.707105 0.707108 0 0" type="cylinder"/>
       </body>
       <body name="right_track_wheel_1" pos="-0.15 -0.24 0">
         <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.3" diaginertia="0.001215 0.000767 0.000767"/>
-        <joint name="right_track_wheel_1_joint" axis="0 1 0"/>
+        <joint name="right_track_wheel_1_joint" axis="0 1 0" armature="0.05"/>
         <geom size="0.09 0.04" quat="0.707105 0.707108 0 0" type="cylinder"/>
       </body>
       <body name="right_track_wheel_2" pos="-0.05 -0.24 0">
         <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.3" diaginertia="0.001215 0.000767 0.000767"/>
-        <joint name="right_track_wheel_2_joint" axis="0 1 0"/>
+        <joint name="right_track_wheel_2_joint" axis="0 1 0" armature="0.05"/>
         <geom size="0.09 0.04" quat="0.707105 0.707108 0 0" type="cylinder"/>
       </body>
       <body name="right_track_wheel_3" pos="0.05 -0.24 0">
         <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.3" diaginertia="0.001215 0.000767 0.000767"/>
-        <joint name="right_track_wheel_3_joint" axis="0 1 0"/>
+        <joint name="right_track_wheel_3_joint" axis="0 1 0" armature="0.05"/>
         <geom size="0.09 0.04" quat="0.707105 0.707108 0 0" type="cylinder"/>
       </body>
       <body name="right_track_wheel_4" pos="0.15 -0.24 0">
         <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.3" diaginertia="0.001215 0.000767 0.000767"/>
-        <joint name="right_track_wheel_4_joint" axis="0 1 0"/>
+        <joint name="right_track_wheel_4_joint" axis="0 1 0" armature="0.05"/>
         <geom size="0.09 0.04" quat="0.707105 0.707108 0 0" type="cylinder"/>
       </body>
       <body name="right_track_wheel_5" pos="0.25 -0.24 0">
         <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.3" diaginertia="0.001215 0.000767 0.000767"/>
-        <joint name="right_track_wheel_5_joint" axis="0 1 0"/>
+        <joint name="right_track_wheel_5_joint" axis="0 1 0" armature="0.05"/>
         <geom size="0.09 0.04" quat="0.707105 0.707108 0 0" type="cylinder"/>
       </body>
       <body name="front_left_flipper" pos="0.25 0.315 0">
         <inertial pos="0.15 0 0" quat="0.5 0.5 0.5 0.5" mass="2.1" diaginertia="0.02142 0.01638 0.0063"/>
-        <joint name="front_left_flipper_joint" range="-1.6 1.6" actuatorfrcrange="-300 300" axis="0 1 0"/>
+        <joint name="front_left_flipper_joint" range="-1.6 1.6" actuatorfrcrange="-300 300" axis="0 1 0" damping="19"/>
         <body name="left_front_flipper_wheel_0">
           <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.15" diaginertia="0.000607 0.000349 0.000349"/>
-          <joint name="left_front_flipper_wheel_0_joint" axis="0 1 0"/>
+          <joint name="left_front_flipper_wheel_0_joint" axis="0 1 0" armature="0.05"/>
           <geom size="0.09 0.03" quat="0.707105 0.707108 0 0" type="cylinder"/>
         </body>
         <body name="left_front_flipper_wheel_1" pos="0.06 0 0">
           <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.15" diaginertia="0.000504 0.000297 0.000297"/>
-          <joint name="left_front_flipper_wheel_1_joint" axis="0 1 0"/>
+          <joint name="left_front_flipper_wheel_1_joint" axis="0 1 0" armature="0.05"/>
           <geom size="0.082 0.03" quat="0.707105 0.707108 0 0" type="cylinder"/>
         </body>
         <body name="left_front_flipper_wheel_2" pos="0.12 0 0">
           <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.15" diaginertia="0.000411 0.00025 0.00025"/>
-          <joint name="left_front_flipper_wheel_2_joint" axis="0 1 0"/>
+          <joint name="left_front_flipper_wheel_2_joint" axis="0 1 0" armature="0.05"/>
           <geom size="0.074 0.03" quat="0.707105 0.707108 0 0" type="cylinder"/>
         </body>
         <body name="left_front_flipper_wheel_3" pos="0.18 0 0">
           <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.15" diaginertia="0.000327 0.000208 0.000208"/>
-          <joint name="left_front_flipper_wheel_3_joint" axis="0 1 0"/>
+          <joint name="left_front_flipper_wheel_3_joint" axis="0 1 0" armature="0.05"/>
           <geom size="0.066 0.03" quat="0.707105 0.707108 0 0" type="cylinder"/>
         </body>
         <body name="left_front_flipper_wheel_4" pos="0.24 0 0">
           <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.15" diaginertia="0.000252 0.000171 0.000171"/>
-          <joint name="left_front_flipper_wheel_4_joint" axis="0 1 0"/>
+          <joint name="left_front_flipper_wheel_4_joint" axis="0 1 0" armature="0.05"/>
           <geom size="0.058 0.03" quat="0.707105 0.707108 0 0" type="cylinder"/>
         </body>
         <body name="left_front_flipper_wheel_5" pos="0.3 0 0">
           <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.15" diaginertia="0.000188 0.000139 0.000139"/>
-          <joint name="left_front_flipper_wheel_5_joint" axis="0 1 0"/>
+          <joint name="left_front_flipper_wheel_5_joint" axis="0 1 0" armature="0.05"/>
           <geom size="0.05 0.03" quat="0.707105 0.707108 0 0" type="cylinder"/>
         </body>
       </body>
       <body name="front_right_flipper" pos="0.25 -0.315 0">
         <inertial pos="0.15 0 0" quat="0.5 0.5 0.5 0.5" mass="2.1" diaginertia="0.02142 0.01638 0.0063"/>
-        <joint name="front_right_flipper_joint" range="-1.6 1.6" actuatorfrcrange="-300 300" axis="0 1 0"/>
+        <joint name="front_right_flipper_joint" range="-1.6 1.6" actuatorfrcrange="-300 300" axis="0 1 0" damping="19"/>
         <body name="right_front_flipper_wheel_0">
           <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.15" diaginertia="0.000607 0.000349 0.000349"/>
           <joint name="right_front_flipper_wheel_0_joint" axis="0 1 0"/>
@@ -135,7 +145,7 @@
       </body>
       <body name="rear_left_flipper" pos="-0.25 0.315 0">
         <inertial pos="-0.15 0 0" quat="0.5 0.5 0.5 0.5" mass="2.1" diaginertia="0.02142 0.01638 0.0063"/>
-        <joint name="rear_left_flipper_joint" range="-1.6 1.6" actuatorfrcrange="-300 300" axis="0 -1 0"/>
+        <joint name="rear_left_flipper_joint" range="-1.6 1.6" actuatorfrcrange="-300 300" axis="0 -1 0" damping="19"/>
         <body name="left_rear_flipper_wheel_0">
           <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.15" diaginertia="0.000607 0.000349 0.000349"/>
           <joint name="left_rear_flipper_wheel_0_joint" axis="0 1 0"/>
@@ -169,7 +179,7 @@
       </body>
       <body name="rear_right_flipper" pos="-0.25 -0.315 0">
         <inertial pos="-0.15 0 0" quat="0.5 0.5 0.5 0.5" mass="2.1" diaginertia="0.02142 0.01638 0.0063"/>
-        <joint name="rear_right_flipper_joint" range="-1.6 1.6" actuatorfrcrange="-300 300" axis="0 -1 0"/>
+        <joint name="rear_right_flipper_joint" range="-1.6 1.6" actuatorfrcrange="-300 300" axis="0 -1 0" damping="19"/>
         <body name="right_rear_flipper_wheel_0">
           <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.15" diaginertia="0.000607 0.000349 0.000349"/>
           <joint name="right_rear_flipper_wheel_0_joint" axis="0 1 0"/>
@@ -203,4 +213,72 @@
       </body>
     </body>
   </worldbody>
+
+  <actuator>
+    <!-- one track wheel: velocity servo -->
+    <velocity name="v_left_0" joint="left_track_wheel_0_joint"
+              kv="30" ctrlrange="-10 10" forcerange="-18 18"/>
+    <velocity name="v_left_1" joint="left_track_wheel_1_joint"
+              kv="30" ctrlrange="-10 10" forcerange="-18 18"/>
+    <velocity name="v_left_2" joint="left_track_wheel_2_joint"
+              kv="30" ctrlrange="-10 10" forcerange="-18 18"/>
+    <velocity name="v_left_3" joint="left_track_wheel_3_joint"
+              kv="30" ctrlrange="-10 10" forcerange="-18 18"/>
+    <velocity name="v_left_4" joint="left_track_wheel_4_joint"
+              kv="30" ctrlrange="-10 10" forcerange="-18 18"/>
+    <velocity name="v_left_5" joint="left_track_wheel_5_joint"
+              kv="30" ctrlrange="-10 10" forcerange="-18 18"/>
+    <velocity name="v_right_0" joint="right_track_wheel_0_joint"
+              kv="30" ctrlrange="-10 10" forcerange="-18 18"/>
+    <velocity name="v_right_1" joint="right_track_wheel_1_joint"
+              kv="30" ctrlrange="-10 10" forcerange="-18 18"/>
+    <velocity name="v_right_2" joint="right_track_wheel_2_joint"
+              kv="30" ctrlrange="-10 10" forcerange="-18 18"/>
+    <velocity name="v_right_3" joint="right_track_wheel_3_joint"
+              kv="30" ctrlrange="-10 10" forcerange="-18 18"/>
+    <velocity name="v_right_4" joint="right_track_wheel_4_joint"
+              kv="30" ctrlrange="-10 10" forcerange="-18 18"/>
+    <velocity name="v_right_5" joint="right_track_wheel_5_joint"
+              kv="30" ctrlrange="-10 10" forcerange="-18 18"/>
+              
+
+
+    <!-- one flipper: position servo -->
+    <position name="p_front_left" joint="front_left_flipper_joint"
+              kp="900" ctrlrange="-1.6 1.6" forcerange="-160 160"/>
+    <position name="p_front_right" joint="front_right_flipper_joint"
+    kp="900" ctrlrange="-1.6 1.6" forcerange="-160 160"/>
+    <position name="p_rear_left" joint="rear_left_flipper_joint"
+    kp="900" ctrlrange="-1.6 1.6" forcerange="-160 160"/>
+    <position name="p_rear_right" joint="rear_right_flipper_joint"
+    kp="900" ctrlrange="-1.6 1.6" forcerange="-160 160"/>
+  </actuator>
+
+    <equality>
+    <joint name="belt_right_front_flipper_wheel_0_joint" joint1="right_front_flipper_wheel_0_joint" joint2="right_track_wheel_5_joint" polycoef="0 1.0000 0 0 0"/>
+    <joint name="belt_right_front_flipper_wheel_1_joint" joint1="right_front_flipper_wheel_1_joint" joint2="right_track_wheel_5_joint" polycoef="0 1.0976 0 0 0"/>
+    <joint name="belt_right_front_flipper_wheel_2_joint" joint1="right_front_flipper_wheel_2_joint" joint2="right_track_wheel_5_joint" polycoef="0 1.2162 0 0 0"/>
+    <joint name="belt_right_front_flipper_wheel_3_joint" joint1="right_front_flipper_wheel_3_joint" joint2="right_track_wheel_5_joint" polycoef="0 1.3636 0 0 0"/>
+    <joint name="belt_right_front_flipper_wheel_4_joint" joint1="right_front_flipper_wheel_4_joint" joint2="right_track_wheel_5_joint" polycoef="0 1.5517 0 0 0"/>
+    <joint name="belt_right_front_flipper_wheel_5_joint" joint1="right_front_flipper_wheel_5_joint" joint2="right_track_wheel_5_joint" polycoef="0 1.8000 0 0 0"/>
+    <joint name="belt_right_rear_flipper_wheel_0_joint" joint1="right_rear_flipper_wheel_0_joint" joint2="right_track_wheel_0_joint" polycoef="0 1.0000 0 0 0"/>
+    <joint name="belt_right_rear_flipper_wheel_1_joint" joint1="right_rear_flipper_wheel_1_joint" joint2="right_track_wheel_0_joint" polycoef="0 1.0976 0 0 0"/>
+    <joint name="belt_right_rear_flipper_wheel_2_joint" joint1="right_rear_flipper_wheel_2_joint" joint2="right_track_wheel_0_joint" polycoef="0 1.2162 0 0 0"/>
+    <joint name="belt_right_rear_flipper_wheel_3_joint" joint1="right_rear_flipper_wheel_3_joint" joint2="right_track_wheel_0_joint" polycoef="0 1.3636 0 0 0"/>
+    <joint name="belt_right_rear_flipper_wheel_4_joint" joint1="right_rear_flipper_wheel_4_joint" joint2="right_track_wheel_0_joint" polycoef="0 1.5517 0 0 0"/>
+    <joint name="belt_right_rear_flipper_wheel_5_joint" joint1="right_rear_flipper_wheel_5_joint" joint2="right_track_wheel_0_joint" polycoef="0 1.8000 0 0 0"/>
+    <joint name="belt_left_front_flipper_wheel_0_joint" joint1="left_front_flipper_wheel_0_joint" joint2="left_track_wheel_5_joint" polycoef="0 1.0000 0 0 0"/>
+    <joint name="belt_left_front_flipper_wheel_1_joint" joint1="left_front_flipper_wheel_1_joint" joint2="left_track_wheel_5_joint" polycoef="0 1.0976 0 0 0"/>
+    <joint name="belt_left_front_flipper_wheel_2_joint" joint1="left_front_flipper_wheel_2_joint" joint2="left_track_wheel_5_joint" polycoef="0 1.2162 0 0 0"/>
+    <joint name="belt_left_front_flipper_wheel_3_joint" joint1="left_front_flipper_wheel_3_joint" joint2="left_track_wheel_5_joint" polycoef="0 1.3636 0 0 0"/>
+    <joint name="belt_left_front_flipper_wheel_4_joint" joint1="left_front_flipper_wheel_4_joint" joint2="left_track_wheel_5_joint" polycoef="0 1.5517 0 0 0"/>
+    <joint name="belt_left_front_flipper_wheel_5_joint" joint1="left_front_flipper_wheel_5_joint" joint2="left_track_wheel_5_joint" polycoef="0 1.8000 0 0 0"/>
+    <joint name="belt_left_rear_flipper_wheel_0_joint" joint1="left_rear_flipper_wheel_0_joint" joint2="left_track_wheel_0_joint" polycoef="0 1.0000 0 0 0"/>
+    <joint name="belt_left_rear_flipper_wheel_1_joint" joint1="left_rear_flipper_wheel_1_joint" joint2="left_track_wheel_0_joint" polycoef="0 1.0976 0 0 0"/>
+    <joint name="belt_left_rear_flipper_wheel_2_joint" joint1="left_rear_flipper_wheel_2_joint" joint2="left_track_wheel_0_joint" polycoef="0 1.2162 0 0 0"/>
+    <joint name="belt_left_rear_flipper_wheel_3_joint" joint1="left_rear_flipper_wheel_3_joint" joint2="left_track_wheel_0_joint" polycoef="0 1.3636 0 0 0"/>
+    <joint name="belt_left_rear_flipper_wheel_4_joint" joint1="left_rear_flipper_wheel_4_joint" joint2="left_track_wheel_0_joint" polycoef="0 1.5517 0 0 0"/>
+    <joint name="belt_left_rear_flipper_wheel_5_joint" joint1="left_rear_flipper_wheel_5_joint" joint2="left_track_wheel_0_joint" polycoef="0 1.8000 0 0 0"/>
+  </equality>
+
 </mujoco>

@@ -1,0 +1,24 @@
+<mujoco model="stairs">
+  <include file="robot.xml"/>
+
+  <asset>
+    <texture name="grid" type="2d" builtin="checker" width="512" height="512"
+             rgb1="0.2 0.3 0.4" rgb2="0.3 0.4 0.5"/>
+    <material name="grid" texture="grid" texrepeat="10 10"/>
+  </asset>
+
+  <worldbody>
+    <light pos="0 0 3" dir="0 0 -1" directional="true"/>
+    <light pos="2 -3 2" dir="0 1 -0.5"/>
+    <geom name="floor" type="plane" size="10 10 0.1" material="grid"/>
+
+    <!-- stairs: x0 = 1.2, rise = 0.15, run = 0.30, 4 steps, all boxes end at x = 3.4
+         each box: front edge at x0 + i*run, top at (i+1)*rise
+         size = HALF-sizes, pos = centre                                          -->
+    <geom name="step_0" type="box" pos="2.30 0 0.075" size="1.10 1.0 0.075" rgba="0.75 0.60 0.40 1"/>
+    <geom name="step_1" type="box" pos="2.45 0 0.150" size="0.95 1.0 0.150" rgba="0.65 0.50 0.32 1"/>
+    <geom name="step_2" type="box" pos="2.60 0 0.225" size="0.80 1.0 0.225" rgba="0.75 0.60 0.40 1"/>
+    <geom name="step_3" type="box" pos="2.75 0 0.300" size="0.65 1.0 0.300" rgba="0.65 0.50 0.32 1"/>
+    <!-- step_3's top (x 2.4 → 3.4, z = 0.6) doubles as the 1 m landing -->
+  </worldbody>
+</mujoco>
