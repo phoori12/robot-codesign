@@ -52,14 +52,12 @@ def on_key(key):
     pass
 
 def apply_controls():
-    # TODO: compute left/right wheel commands (rad/s) and flipper targets from `state`
-    #       and write them into d.ctrl, e.g. with d.actuator("v_left_0").ctrl[0] = ...
     W_MOVING = 7.0
     W_STILL = 2.0
     turn = state["turn"] * (W_MOVING if state["v"] != 0 else W_STILL)
     v = [(state["v"] - turn * B/2) / R, (state["v"] + turn * B/2)/R]
     v_top = max(abs(v[0]), abs(v[1])) 
-    
+
     if v_top > MAX_SPD:
         v[0] = v[0] * MAX_SPD / v_top
         v[1] = v[1] * MAX_SPD / v_top
