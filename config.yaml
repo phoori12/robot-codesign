@@ -1,0 +1,35 @@
+# =====================================================================
+#  Flipper co-design configuration
+#  All lengths in metres, angles in radians, masses in kg.
+# =====================================================================
+
+# ---------------------------------------------------------------------
+# Robot model
+#   source: "placeholder" -> a generic 4-flipper tracked RRL robot is
+#                            generated for every candidate length.
+#   source: "urdf"        -> your own URDF is loaded and its flipper
+#                            links are stretched to each candidate length.
+# ---------------------------------------------------------------------
+robot:
+  source: placeholder
+
+  # ---- used only when source == urdf --------------------------------
+  urdf_path: path/to/your_robot.urdf
+  # Replaces "package://<pkg>/" in mesh paths. Only STL/OBJ meshes work in MuJoCo.
+  package_dirs:
+    my_robot_description: path/to/my_robot_description
+  base_link: base_link
+  nominal_flipper_length: 0.30     # pivot-to-tip length of the flippers in the URDF
+  flippers:                        # direction = flipper axis (pivot -> tip) in the link frame
+    - {joint: front_left_flipper_joint,  link: front_left_flipper,  direction: [1, 0, 0]}
+    - {joint: front_right_flipper_joint, link: front_right_flipper, direction: [1, 0, 0]}
+    - {joint: rear_left_flipper_joint,   link: rear_left_flipper,   direction: [-1, 0, 0]}
+    - {joint: rear_right_flipper_joint,  link: rear_right_flipper,  direction: [-1, 0, 0]}
+  # Sign so that +angle on every flipper joint means "tip towards the ground".
+  # Placeholder robot already follows this convention (all +1).
+  flipper_sign: {front_left_flipper_joint: 1, front_right_flipper_joint: 1,
+                 rear_left_flipper_joint: 1, rear_right_flipper_joint: 1}
+  # Regexes that pick out the driven track wheels/sprockets on each side.
+  wheel_joint_regex: {left: "^left_.*wheel", right: "^right_.*wheel"}
+  wheel_sign: 1                    # flip to -1 if +velocity drives your robot backwards
+  default_wheel_radius: 0.09       # used if a wheel's radius can't be read from its geometry

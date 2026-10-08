@@ -1,2 +1,2 @@
 # robot-codesign
-robocup rescue code sign for optimizing selected mechanical parts
+Bachelor's thesis work on Rescue robot co-design for optimizing selected mechanical part parameters

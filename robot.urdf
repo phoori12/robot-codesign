@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<robot name="rrl_tracked_4flipper">
+  <mujoco><compiler discardvisual="true" fusestatic="false" balanceinertia="true"/></mujoco>
+  <link name="base_link">
+    <inertial><origin xyz="0.00000 0.00000 0.04500"/><mass value="25.0000"/><inertia ixx="0.393542" ixy="0" ixz="0" iyy="0.810208" iyz="0" izz="1.083333"/></inertial>
+    <visual><origin xyz="0 0 0.0450"/><geometry><box size="0.6000 0.4000 0.1700"/></geometry></visual>
+    <collision><origin xyz="0 0 0.0450"/><geometry><box size="0.6000 0.4000 0.1700"/></geometry></collision>
+  </link>
+  <link name="left_track_wheel_0">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.3000"/><inertia ixx="0.000767" ixy="0" ixz="0" iyy="0.001215" iyz="0" izz="0.000767"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></collision>
+  </link>
+  <joint name="left_track_wheel_0_joint" type="continuous"><parent link="base_link"/><child link="left_track_wheel_0"/><origin xyz="-0.25000 0.24000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="left_track_wheel_1">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.3000"/><inertia ixx="0.000767" ixy="0" ixz="0" iyy="0.001215" iyz="0" izz="0.000767"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></collision>
+  </link>
+  <joint name="left_track_wheel_1_joint" type="continuous"><parent link="base_link"/><child link="left_track_wheel_1"/><origin xyz="-0.15000 0.24000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="left_track_wheel_2">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.3000"/><inertia ixx="0.000767" ixy="0" ixz="0" iyy="0.001215" iyz="0" izz="0.000767"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></collision>
+  </link>
+  <joint name="left_track_wheel_2_joint" type="continuous"><parent link="base_link"/><child link="left_track_wheel_2"/><origin xyz="-0.05000 0.24000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="left_track_wheel_3">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.3000"/><inertia ixx="0.000767" ixy="0" ixz="0" iyy="0.001215" iyz="0" izz="0.000767"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></collision>
+  </link>
+  <joint name="left_track_wheel_3_joint" type="continuous"><parent link="base_link"/><child link="left_track_wheel_3"/><origin xyz="0.05000 0.24000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="left_track_wheel_4">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.3000"/><inertia ixx="0.000767" ixy="0" ixz="0" iyy="0.001215" iyz="0" izz="0.000767"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></collision>
+  </link>
+  <joint name="left_track_wheel_4_joint" type="continuous"><parent link="base_link"/><child link="left_track_wheel_4"/><origin xyz="0.15000 0.24000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="left_track_wheel_5">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.3000"/><inertia ixx="0.000767" ixy="0" ixz="0" iyy="0.001215" iyz="0" izz="0.000767"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></collision>
+  </link>
+  <joint name="left_track_wheel_5_joint" type="continuous"><parent link="base_link"/><child link="left_track_wheel_5"/><origin xyz="0.25000 0.24000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="right_track_wheel_0">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.3000"/><inertia ixx="0.000767" ixy="0" ixz="0" iyy="0.001215" iyz="0" izz="0.000767"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></collision>
+  </link>
+  <joint name="right_track_wheel_0_joint" type="continuous"><parent link="base_link"/><child link="right_track_wheel_0"/><origin xyz="-0.25000 -0.24000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="right_track_wheel_1">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.3000"/><inertia ixx="0.000767" ixy="0" ixz="0" iyy="0.001215" iyz="0" izz="0.000767"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></collision>
+  </link>
+  <joint name="right_track_wheel_1_joint" type="continuous"><parent link="base_link"/><child link="right_track_wheel_1"/><origin xyz="-0.15000 -0.24000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="right_track_wheel_2">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.3000"/><inertia ixx="0.000767" ixy="0" ixz="0" iyy="0.001215" iyz="0" izz="0.000767"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></collision>
+  </link>
+  <joint name="right_track_wheel_2_joint" type="continuous"><parent link="base_link"/><child link="right_track_wheel_2"/><origin xyz="-0.05000 -0.24000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="right_track_wheel_3">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.3000"/><inertia ixx="0.000767" ixy="0" ixz="0" iyy="0.001215" iyz="0" izz="0.000767"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></collision>
+  </link>
+  <joint name="right_track_wheel_3_joint" type="continuous"><parent link="base_link"/><child link="right_track_wheel_3"/><origin xyz="0.05000 -0.24000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="right_track_wheel_4">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.3000"/><inertia ixx="0.000767" ixy="0" ixz="0" iyy="0.001215" iyz="0" izz="0.000767"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></collision>
+  </link>
+  <joint name="right_track_wheel_4_joint" type="continuous"><parent link="base_link"/><child link="right_track_wheel_4"/><origin xyz="0.15000 -0.24000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="right_track_wheel_5">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.3000"/><inertia ixx="0.000767" ixy="0" ixz="0" iyy="0.001215" iyz="0" izz="0.000767"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0800"/></geometry></collision>
+  </link>
+  <joint name="right_track_wheel_5_joint" type="continuous"><parent link="base_link"/><child link="right_track_wheel_5"/><origin xyz="0.25000 -0.24000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="front_left_flipper">
+    <inertial><origin xyz="0.15000 0.00000 0.00000"/><mass value="2.1000"/><inertia ixx="0.006300" ixy="0" ixz="0" iyy="0.021420" iyz="0" izz="0.016380"/></inertial>
+  </link>
+  <joint name="front_left_flipper_joint" type="revolute"><parent link="base_link"/><child link="front_left_flipper"/><origin xyz="0.25000 0.31500 0.00000"/><axis xyz="0 1 0"/><limit lower="-1.6" upper="1.6" effort="300" velocity="3"/><dynamics damping="0.0"/></joint>
+  <link name="left_front_flipper_wheel_0">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000349" ixy="0" ixz="0" iyy="0.000607" iyz="0" izz="0.000349"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="left_front_flipper_wheel_0_joint" type="continuous"><parent link="front_left_flipper"/><child link="left_front_flipper_wheel_0"/><origin xyz="0.00000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="left_front_flipper_wheel_1">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000297" ixy="0" ixz="0" iyy="0.000504" iyz="0" izz="0.000297"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0820" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0820" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="left_front_flipper_wheel_1_joint" type="continuous"><parent link="front_left_flipper"/><child link="left_front_flipper_wheel_1"/><origin xyz="0.06000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="left_front_flipper_wheel_2">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000250" ixy="0" ixz="0" iyy="0.000411" iyz="0" izz="0.000250"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0740" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0740" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="left_front_flipper_wheel_2_joint" type="continuous"><parent link="front_left_flipper"/><child link="left_front_flipper_wheel_2"/><origin xyz="0.12000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="left_front_flipper_wheel_3">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000208" ixy="0" ixz="0" iyy="0.000327" iyz="0" izz="0.000208"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0660" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0660" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="left_front_flipper_wheel_3_joint" type="continuous"><parent link="front_left_flipper"/><child link="left_front_flipper_wheel_3"/><origin xyz="0.18000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="left_front_flipper_wheel_4">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000171" ixy="0" ixz="0" iyy="0.000252" iyz="0" izz="0.000171"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0580" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0580" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="left_front_flipper_wheel_4_joint" type="continuous"><parent link="front_left_flipper"/><child link="left_front_flipper_wheel_4"/><origin xyz="0.24000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="left_front_flipper_wheel_5">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000139" ixy="0" ixz="0" iyy="0.000188" iyz="0" izz="0.000139"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0500" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0500" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="left_front_flipper_wheel_5_joint" type="continuous"><parent link="front_left_flipper"/><child link="left_front_flipper_wheel_5"/><origin xyz="0.30000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="front_right_flipper">
+    <inertial><origin xyz="0.15000 0.00000 0.00000"/><mass value="2.1000"/><inertia ixx="0.006300" ixy="0" ixz="0" iyy="0.021420" iyz="0" izz="0.016380"/></inertial>
+  </link>
+  <joint name="front_right_flipper_joint" type="revolute"><parent link="base_link"/><child link="front_right_flipper"/><origin xyz="0.25000 -0.31500 0.00000"/><axis xyz="0 1 0"/><limit lower="-1.6" upper="1.6" effort="300" velocity="3"/><dynamics damping="0.0"/></joint>
+  <link name="right_front_flipper_wheel_0">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000349" ixy="0" ixz="0" iyy="0.000607" iyz="0" izz="0.000349"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="right_front_flipper_wheel_0_joint" type="continuous"><parent link="front_right_flipper"/><child link="right_front_flipper_wheel_0"/><origin xyz="0.00000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="right_front_flipper_wheel_1">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000297" ixy="0" ixz="0" iyy="0.000504" iyz="0" izz="0.000297"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0820" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0820" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="right_front_flipper_wheel_1_joint" type="continuous"><parent link="front_right_flipper"/><child link="right_front_flipper_wheel_1"/><origin xyz="0.06000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="right_front_flipper_wheel_2">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000250" ixy="0" ixz="0" iyy="0.000411" iyz="0" izz="0.000250"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0740" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0740" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="right_front_flipper_wheel_2_joint" type="continuous"><parent link="front_right_flipper"/><child link="right_front_flipper_wheel_2"/><origin xyz="0.12000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="right_front_flipper_wheel_3">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000208" ixy="0" ixz="0" iyy="0.000327" iyz="0" izz="0.000208"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0660" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0660" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="right_front_flipper_wheel_3_joint" type="continuous"><parent link="front_right_flipper"/><child link="right_front_flipper_wheel_3"/><origin xyz="0.18000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="right_front_flipper_wheel_4">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000171" ixy="0" ixz="0" iyy="0.000252" iyz="0" izz="0.000171"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0580" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0580" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="right_front_flipper_wheel_4_joint" type="continuous"><parent link="front_right_flipper"/><child link="right_front_flipper_wheel_4"/><origin xyz="0.24000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="right_front_flipper_wheel_5">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000139" ixy="0" ixz="0" iyy="0.000188" iyz="0" izz="0.000139"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0500" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0500" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="right_front_flipper_wheel_5_joint" type="continuous"><parent link="front_right_flipper"/><child link="right_front_flipper_wheel_5"/><origin xyz="0.30000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="rear_left_flipper">
+    <inertial><origin xyz="-0.15000 0.00000 0.00000"/><mass value="2.1000"/><inertia ixx="0.006300" ixy="0" ixz="0" iyy="0.021420" iyz="0" izz="0.016380"/></inertial>
+  </link>
+  <joint name="rear_left_flipper_joint" type="revolute"><parent link="base_link"/><child link="rear_left_flipper"/><origin xyz="-0.25000 0.31500 0.00000"/><axis xyz="0 -1 0"/><limit lower="-1.6" upper="1.6" effort="300" velocity="3"/><dynamics damping="0.0"/></joint>
+  <link name="left_rear_flipper_wheel_0">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000349" ixy="0" ixz="0" iyy="0.000607" iyz="0" izz="0.000349"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="left_rear_flipper_wheel_0_joint" type="continuous"><parent link="rear_left_flipper"/><child link="left_rear_flipper_wheel_0"/><origin xyz="-0.00000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="left_rear_flipper_wheel_1">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000297" ixy="0" ixz="0" iyy="0.000504" iyz="0" izz="0.000297"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0820" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0820" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="left_rear_flipper_wheel_1_joint" type="continuous"><parent link="rear_left_flipper"/><child link="left_rear_flipper_wheel_1"/><origin xyz="-0.06000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="left_rear_flipper_wheel_2">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000250" ixy="0" ixz="0" iyy="0.000411" iyz="0" izz="0.000250"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0740" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0740" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="left_rear_flipper_wheel_2_joint" type="continuous"><parent link="rear_left_flipper"/><child link="left_rear_flipper_wheel_2"/><origin xyz="-0.12000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="left_rear_flipper_wheel_3">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000208" ixy="0" ixz="0" iyy="0.000327" iyz="0" izz="0.000208"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0660" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0660" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="left_rear_flipper_wheel_3_joint" type="continuous"><parent link="rear_left_flipper"/><child link="left_rear_flipper_wheel_3"/><origin xyz="-0.18000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="left_rear_flipper_wheel_4">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000171" ixy="0" ixz="0" iyy="0.000252" iyz="0" izz="0.000171"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0580" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0580" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="left_rear_flipper_wheel_4_joint" type="continuous"><parent link="rear_left_flipper"/><child link="left_rear_flipper_wheel_4"/><origin xyz="-0.24000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="left_rear_flipper_wheel_5">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000139" ixy="0" ixz="0" iyy="0.000188" iyz="0" izz="0.000139"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0500" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0500" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="left_rear_flipper_wheel_5_joint" type="continuous"><parent link="rear_left_flipper"/><child link="left_rear_flipper_wheel_5"/><origin xyz="-0.30000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="rear_right_flipper">
+    <inertial><origin xyz="-0.15000 0.00000 0.00000"/><mass value="2.1000"/><inertia ixx="0.006300" ixy="0" ixz="0" iyy="0.021420" iyz="0" izz="0.016380"/></inertial>
+  </link>
+  <joint name="rear_right_flipper_joint" type="revolute"><parent link="base_link"/><child link="rear_right_flipper"/><origin xyz="-0.25000 -0.31500 0.00000"/><axis xyz="0 -1 0"/><limit lower="-1.6" upper="1.6" effort="300" velocity="3"/><dynamics damping="0.0"/></joint>
+  <link name="right_rear_flipper_wheel_0">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000349" ixy="0" ixz="0" iyy="0.000607" iyz="0" izz="0.000349"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0900" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="right_rear_flipper_wheel_0_joint" type="continuous"><parent link="rear_right_flipper"/><child link="right_rear_flipper_wheel_0"/><origin xyz="-0.00000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="right_rear_flipper_wheel_1">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000297" ixy="0" ixz="0" iyy="0.000504" iyz="0" izz="0.000297"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0820" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0820" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="right_rear_flipper_wheel_1_joint" type="continuous"><parent link="rear_right_flipper"/><child link="right_rear_flipper_wheel_1"/><origin xyz="-0.06000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="right_rear_flipper_wheel_2">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000250" ixy="0" ixz="0" iyy="0.000411" iyz="0" izz="0.000250"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0740" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0740" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="right_rear_flipper_wheel_2_joint" type="continuous"><parent link="rear_right_flipper"/><child link="right_rear_flipper_wheel_2"/><origin xyz="-0.12000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="right_rear_flipper_wheel_3">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000208" ixy="0" ixz="0" iyy="0.000327" iyz="0" izz="0.000208"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0660" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0660" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="right_rear_flipper_wheel_3_joint" type="continuous"><parent link="rear_right_flipper"/><child link="right_rear_flipper_wheel_3"/><origin xyz="-0.18000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="right_rear_flipper_wheel_4">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000171" ixy="0" ixz="0" iyy="0.000252" iyz="0" izz="0.000171"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0580" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0580" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="right_rear_flipper_wheel_4_joint" type="continuous"><parent link="rear_right_flipper"/><child link="right_rear_flipper_wheel_4"/><origin xyz="-0.24000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+  <link name="right_rear_flipper_wheel_5">
+    <inertial><origin xyz="0.00000 0.00000 0.00000"/><mass value="0.1500"/><inertia ixx="0.000139" ixy="0" ixz="0" iyy="0.000188" iyz="0" izz="0.000139"/></inertial>
+    <visual><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0500" length="0.0600"/></geometry></visual>
+    <collision><origin rpy="1.5708 0 0"/><geometry><cylinder radius="0.0500" length="0.0600"/></geometry></collision>
+  </link>
+  <joint name="right_rear_flipper_wheel_5_joint" type="continuous"><parent link="rear_right_flipper"/><child link="right_rear_flipper_wheel_5"/><origin xyz="-0.30000 0.00000 0.00000"/><axis xyz="0 1 0"/><dynamics damping="0.0"/></joint>
+</robot>

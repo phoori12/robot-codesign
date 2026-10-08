@@ -1,0 +1,24 @@
+[project]
+name = "robot-codesign"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "mujoco>=3.1",
+    "numpy>=2.5.3",
+    "pybind11-stubgen>=3.0.0",
+    "pytest>=9.1.1",
+    "pyyaml>=6.0.3",
+]
+
+[project.scripts]
+robot-codesign = "robot_codesign:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pyright]
+stubPath = "./typings"
