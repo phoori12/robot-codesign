@@ -5,19 +5,37 @@ import mujoco.viewer
 
 m = mujoco.MjModel.from_xml_path("stairs.xml")
 d = mujoco.MjData(m)
+m.flg_surfacevel = True
 
-R = m.geom_size[m.body_geomadr[m.body("left_track_wheel_0").id]][0]       # drive wheel radius [m]
-B = m.body("left_track_wheel_0").pos[1] - m.body("right_track_wheel_0").pos[1]
+R = m.geom_size[m.geom("left_drive_pulley_geom").id][0]                        # drive pulley radius [m]
+B = m.body("left_drive_pulley").pos[1] - m.body("right_drive_pulley").pos[1]   # track separation [m]
 MAX_SPD = 10
 
+R_MAIN = 0.09     # drive / pivot / rear pulley radius [m]
+R_TIP = 0.05      # flipper tip pulley radius [m]
+
 state = {"v": 0.0, "turn": 0.0, "front": 0, "rear": 0.0, "reset": False}   # what the keys change
+
+def set_belt_speed(side, v):
+    """Belt speed v [m/s] on one side (+ = robot moves forward), for main track + both flippers."""
+    def sv(name, vals):
+        m.geom_surfacevel[m.geom(name).id] = vals
+
+    sv(f"track_{side}_rear_pulley", [0, 0, 0, 0, 0, v / R_MAIN])
+    sv(f"track_{side}_bottom", [-v, 0, 0, 0, 0, 0])
+    sv(f"track_{side}_top", [v, 0, 0, 0, 0, 0])
+    for end in ("front", "rear"):
+        sv(f"flip_{end}_{side}_pivot", [0, 0, 0, 0, 0, v / R_MAIN])
+        sv(f"flip_{end}_{side}_tip", [0, 0, 0, 0, 0, v / R_TIP])
+        sv(f"flip_{end}_{side}_bottom", [-v, 0, 0, 0, 0, 0])
+        sv(f"flip_{end}_{side}_top", [v, 0, 0, 0, 0, 0])
 
 def on_key(key):
     if key == 265:
         if state["v"] < 0.0:
             state["v"] = 0
         else:
-            state["v"] = 3
+            state["v"] = 0.9
     elif key == 263:
         if state["turn"] < 0:
             state["turn"] = 0
@@ -28,7 +46,7 @@ def on_key(key):
         if state["v"] > 0.0:
             state["v"] = 0
         else:
-            state["v"] = -3
+            state["v"] = -0.9
     elif key == 262:
         if state["turn"] > 0:
             state["turn"] = 0
@@ -62,13 +80,12 @@ def apply_controls():
         v[0] = v[0] * MAX_SPD / v_top
         v[1] = v[1] * MAX_SPD / v_top
 
-    drive_actuators = ["v_left_", "v_right_"]
+    d.actuator("drive_left").ctrl[0] = v[0]
+    d.actuator("drive_right").ctrl[0] = v[1]
 
-    j = 0
-    for da in drive_actuators:
-        for i in range(6):
-            d.actuator(da+str(i)).ctrl[0] = v[j]
-        j = j + 1
+    for side in ("left", "right"):
+        omega = d.qvel[m.joint(f"{side}_drive_joint").dofadr[0]]
+        set_belt_speed(side, omega * R_MAIN)
 
     d.actuator("p_front_left").ctrl[0] = state["front"]
     d.actuator("p_front_right").ctrl[0] = state["front"]

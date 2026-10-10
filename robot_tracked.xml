@@ -1,0 +1,120 @@
+<mujoco model="rrl_tracked_4flipper_belt">
+  <!--
+    Tracked robot with belt tracks modelled via geom surfacevel (MuJoCo >= 3.11).
+
+    Belt speed v [m/s] is NOT set here: Python writes it every control step into
+    m.geom_surfacevel (see set_belt_speed). Pulleys get an angular surface velocity
+    about their own axis (local z), strips a linear one along their local x:
+      bottom strip: -v   top strip: +v   pulley: v / r     (v > 0 = robot drives forward)
+    Only the two front drive pulleys are real rotating bodies with a motor.
+
+    Flipper length L = 0.3 m. The strip pose follows from the tangent to both pulleys:
+      alpha = asin((r_pivot - r_tip) / L)
+  -->
+  <compiler angle="radian"/>
+  <option timestep="0.002" cone="elliptic"/>
+
+  <default>
+    <geom contype="1" conaffinity="1"/>                       <!-- world geoms -->
+    <default class="robot">
+      <geom contype="2" conaffinity="1" friction="1.0 0.01 0.001" rgba="0.55 0.6 0.65 1"/>
+      <default class="belt_pulley">
+        <geom type="cylinder" rgba="0.25 0.25 0.28 1"/>
+      </default>
+      <default class="belt_strip">
+        <geom type="box" rgba="0.12 0.12 0.12 1"/>
+      </default>
+    </default>
+  </default>
+
+  <worldbody>
+    <body name="base_link" childclass="robot" pos="0 0 0.15">
+      <freejoint/>
+      <!-- chassis + main-track masses lumped together (total robot ~40.6 kg as before) -->
+      <inertial pos="0 0 0.02" mass="31.2" diaginertia="0.4911 1.0111 1.352"/>
+      <geom name="chassis" type="box" size="0.3 0.2 0.085" pos="0 0 0.045"/>
+
+      <!-- left main track: driven front pulley (real joint + motor), belt geoms with surfacevel -->
+      <body name="left_drive_pulley" pos="0.25 0.24 0">
+        <joint name="left_drive_joint" type="hinge" axis="0 1 0" armature="0.05" damping="0.05"/>
+        <inertial pos="0 0 0" mass="0.5" diaginertia="0.00128 0.002025 0.00128"/>
+        <geom name="left_drive_pulley_geom" class="belt_pulley" size="0.09 0.04" quat="0.707107 -0.707107 0 0"/>
+      </body>
+      <geom name="track_left_rear_pulley" class="belt_pulley" size="0.09 0.04" pos="-0.25 0.24 0" quat="0.707107 -0.707107 0 0"/>
+      <geom name="track_left_bottom" class="belt_strip" size="0.25 0.04 0.01" pos="0 0.24 -0.08"/>
+      <geom name="track_left_top"    class="belt_strip" size="0.25 0.04 0.01" pos="0 0.24 0.08"/>
+
+      <!-- right main track: driven front pulley (real joint + motor), belt geoms with surfacevel -->
+      <body name="right_drive_pulley" pos="0.25 -0.24 0">
+        <joint name="right_drive_joint" type="hinge" axis="0 1 0" armature="0.05" damping="0.05"/>
+        <inertial pos="0 0 0" mass="0.5" diaginertia="0.00128 0.002025 0.00128"/>
+        <geom name="right_drive_pulley_geom" class="belt_pulley" size="0.09 0.04" quat="0.707107 -0.707107 0 0"/>
+      </body>
+      <geom name="track_right_rear_pulley" class="belt_pulley" size="0.09 0.04" pos="-0.25 -0.24 0" quat="0.707107 -0.707107 0 0"/>
+      <geom name="track_right_bottom" class="belt_strip" size="0.25 0.04 0.01" pos="0 -0.24 -0.08"/>
+      <geom name="track_right_top"    class="belt_strip" size="0.25 0.04 0.01" pos="0 -0.24 0.08"/>
+
+      <!-- front left flipper: pivot pulley r=0.09, tip pulley r=0.05, length L=0.3 -->
+      <body name="front_left_flipper" pos="0.25 0.315 0">
+        <joint name="front_left_flipper_joint" type="hinge" axis="0 1 0" range="-1.6 1.6"
+               damping="25" armature="0.05"/>
+        <inertial pos="0.15 0 0" mass="2.1" diaginertia="0.00406 0.01918 0.01638"/>
+        <geom name="flip_front_left_pivot"  class="belt_pulley" size="0.09 0.03" quat="0.707107 -0.707107 0 0"/>
+        <geom name="flip_front_left_tip"    class="belt_pulley" size="0.05 0.03" pos="0.3 0 0" quat="0.707107 -0.707107 0 0"/>
+        <geom name="flip_front_left_bottom" class="belt_strip" size="0.14866 0.03 0.01"
+              pos="0.158 0 -0.05946" euler="0 -0.13373 0"/>
+        <geom name="flip_front_left_top"    class="belt_strip" size="0.14866 0.03 0.01"
+              pos="0.158 0 0.05946" euler="0 0.13373 0"/>
+      </body>
+
+      <!-- front right flipper: pivot pulley r=0.09, tip pulley r=0.05, length L=0.3 -->
+      <body name="front_right_flipper" pos="0.25 -0.315 0">
+        <joint name="front_right_flipper_joint" type="hinge" axis="0 1 0" range="-1.6 1.6"
+               damping="25" armature="0.05"/>
+        <inertial pos="0.15 0 0" mass="2.1" diaginertia="0.00406 0.01918 0.01638"/>
+        <geom name="flip_front_right_pivot"  class="belt_pulley" size="0.09 0.03" quat="0.707107 -0.707107 0 0"/>
+        <geom name="flip_front_right_tip"    class="belt_pulley" size="0.05 0.03" pos="0.3 0 0" quat="0.707107 -0.707107 0 0"/>
+        <geom name="flip_front_right_bottom" class="belt_strip" size="0.14866 0.03 0.01"
+              pos="0.158 0 -0.05946" euler="0 -0.13373 0"/>
+        <geom name="flip_front_right_top"    class="belt_strip" size="0.14866 0.03 0.01"
+              pos="0.158 0 0.05946" euler="0 0.13373 0"/>
+      </body>
+
+      <!-- rear left flipper: pivot pulley r=0.09, tip pulley r=0.05, length L=0.3 -->
+      <body name="rear_left_flipper" pos="-0.25 0.315 0">
+        <joint name="rear_left_flipper_joint" type="hinge" axis="0 -1 0" range="-1.6 1.6"
+               damping="25" armature="0.05"/>
+        <inertial pos="-0.15 0 0" mass="2.1" diaginertia="0.00406 0.01918 0.01638"/>
+        <geom name="flip_rear_left_pivot"  class="belt_pulley" size="0.09 0.03" quat="0.707107 -0.707107 0 0"/>
+        <geom name="flip_rear_left_tip"    class="belt_pulley" size="0.05 0.03" pos="-0.3 0 0" quat="0.707107 -0.707107 0 0"/>
+        <geom name="flip_rear_left_bottom" class="belt_strip" size="0.14866 0.03 0.01"
+              pos="-0.158 0 -0.05946" euler="0 0.13373 0"/>
+        <geom name="flip_rear_left_top"    class="belt_strip" size="0.14866 0.03 0.01"
+              pos="-0.158 0 0.05946" euler="0 -0.13373 0"/>
+      </body>
+
+      <!-- rear right flipper: pivot pulley r=0.09, tip pulley r=0.05, length L=0.3 -->
+      <body name="rear_right_flipper" pos="-0.25 -0.315 0">
+        <joint name="rear_right_flipper_joint" type="hinge" axis="0 -1 0" range="-1.6 1.6"
+               damping="25" armature="0.05"/>
+        <inertial pos="-0.15 0 0" mass="2.1" diaginertia="0.00406 0.01918 0.01638"/>
+        <geom name="flip_rear_right_pivot"  class="belt_pulley" size="0.09 0.03" quat="0.707107 -0.707107 0 0"/>
+        <geom name="flip_rear_right_tip"    class="belt_pulley" size="0.05 0.03" pos="-0.3 0 0" quat="0.707107 -0.707107 0 0"/>
+        <geom name="flip_rear_right_bottom" class="belt_strip" size="0.14866 0.03 0.01"
+              pos="-0.158 0 -0.05946" euler="0 0.13373 0"/>
+        <geom name="flip_rear_right_top"    class="belt_strip" size="0.14866 0.03 0.01"
+              pos="-0.158 0 0.05946" euler="0 -0.13373 0"/>
+      </body>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <!-- one motor per side (placeholder limits: replace with your motor + gearbox data) -->
+    <velocity name="drive_left"  joint="left_drive_joint"  kv="30" ctrlrange="-10 10" forcerange="-90 90"/>
+    <velocity name="drive_right" joint="right_drive_joint" kv="30" ctrlrange="-10 10" forcerange="-90 90"/>
+    <position name="p_front_left"  joint="front_left_flipper_joint"  kp="900" ctrlrange="-1.6 1.6" forcerange="-160 160"/>
+    <position name="p_front_right" joint="front_right_flipper_joint" kp="900" ctrlrange="-1.6 1.6" forcerange="-160 160"/>
+    <position name="p_rear_left"   joint="rear_left_flipper_joint"   kp="900" ctrlrange="-1.6 1.6" forcerange="-160 160"/>
+    <position name="p_rear_right"  joint="rear_right_flipper_joint"  kp="900" ctrlrange="-1.6 1.6" forcerange="-160 160"/>
+  </actuator>
+</mujoco>

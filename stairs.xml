@@ -1,5 +1,5 @@
 <mujoco model="stairs">
-  <include file="robot.xml"/>
+  <include file="robot_tracked.xml"/>
 
   <asset>
     <texture name="grid" type="2d" builtin="checker" width="512" height="512"
