@@ -1,0 +1,206 @@
+<mujoco model="field_half_cubic_stepfields">
+  <include file="robot_tracked.xml"/>
+  <compiler angle="radian"/>
+
+  <asset>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_1" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-1.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_10" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-10.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_11" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-11.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_12" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-12.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_13" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-13.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_14" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-14.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_15" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-15.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_16" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-16.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_17" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-17.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_18" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-18.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_19" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-19.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_2" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-2.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_20" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-20.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_21" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-21.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_22" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-22.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_23" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-23.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_24" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-24.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_25" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-25.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_26" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-26.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_27" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-27.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_28" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-28.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_29" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-29.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_3" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-3.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_30" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-30.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_31" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-31.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_32" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-32.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-4.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_5" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-5.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_6" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-6.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_7" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-7.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_8" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-8.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_full_step_9" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_full_step-9.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_1" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-1.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_10" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-10.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_11" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-11.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_12" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-12.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_13" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-13.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_14" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-14.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_15" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-15.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_16" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-16.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_17" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-17.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_18" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-18.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_19" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-19.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_2" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-2.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_20" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-20.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_21" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-21.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_22" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-22.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_23" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-23.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_24" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-24.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_25" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-25.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_26" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-26.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_27" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-27.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_28" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-28.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_29" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-29.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_3" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-3.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_30" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-30.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_31" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-31.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_32" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-32.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_33" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-33.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_34" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-34.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_35" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-35.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_36" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-36.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_37" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-37.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_38" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-38.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_39" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-39.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-4.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_40" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-40.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_41" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-41.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_42" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-42.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_43" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-43.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_44" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-44.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_45" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-45.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_46" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-46.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_47" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-47.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_48" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-48.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_5" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-5.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_6" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-6.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_7" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-7.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_8" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-8.STL"/>
+    <mesh name="field_half_cubic_stepfields_cubic_half_step_9" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - cubic_half_step-9.STL"/>
+    <mesh name="field_half_cubic_stepfields_floors_1" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - floors-1.STL"/>
+    <mesh name="field_half_cubic_stepfields_floors_2" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - floors-2.STL"/>
+    <mesh name="field_half_cubic_stepfields_floors_3" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - floors-3.STL"/>
+    <mesh name="field_half_cubic_stepfields_floors_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - floors-4.STL"/>
+    <mesh name="field_half_cubic_stepfields_lane_railings_1" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - lane_railings-1.STL"/>
+    <mesh name="field_half_cubic_stepfields_lane_railings_10" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - lane_railings-10.STL"/>
+    <mesh name="field_half_cubic_stepfields_lane_railings_11" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - lane_railings-11.STL"/>
+    <mesh name="field_half_cubic_stepfields_lane_railings_12" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - lane_railings-12.STL"/>
+    <mesh name="field_half_cubic_stepfields_lane_railings_13" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - lane_railings-13.STL"/>
+    <mesh name="field_half_cubic_stepfields_lane_railings_2" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - lane_railings-2.STL"/>
+    <mesh name="field_half_cubic_stepfields_lane_railings_3" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - lane_railings-3.STL"/>
+    <mesh name="field_half_cubic_stepfields_lane_railings_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - lane_railings-4.STL"/>
+    <mesh name="field_half_cubic_stepfields_lane_railings_5" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - lane_railings-5.STL"/>
+    <mesh name="field_half_cubic_stepfields_lane_railings_6" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - lane_railings-6.STL"/>
+    <mesh name="field_half_cubic_stepfields_lane_railings_7" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - lane_railings-7.STL"/>
+    <mesh name="field_half_cubic_stepfields_lane_railings_8" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - lane_railings-8.STL"/>
+    <mesh name="field_half_cubic_stepfields_lane_railings_9" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_half_cubic_stepfields/field_half_cubic_stepfields - lane_railings-9.STL"/>
+  </asset>
+
+  <worldbody>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_1" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_1"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_10" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_10"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_11" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_11"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_12" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_12"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_13" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_13"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_14" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_14"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_15" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_15"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_16" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_16"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_17" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_17"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_18" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_18"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_19" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_19"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_2" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_2"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_20" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_20"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_21" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_21"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_22" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_22"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_23" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_23"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_24" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_24"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_25" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_25"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_26" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_26"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_27" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_27"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_28" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_28"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_29" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_29"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_3" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_3"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_30" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_30"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_31" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_31"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_32" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_32"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_4"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_5" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_5"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_6" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_6"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_7" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_7"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_8" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_8"/>
+    <geom name="field_half_cubic_stepfields_cubic_full_step_9" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 0.588235 0 1" mesh="field_half_cubic_stepfields_cubic_full_step_9"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_1" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_1"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_10" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_10"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_11" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_11"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_12" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_12"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_13" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_13"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_14" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_14"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_15" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_15"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_16" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_16"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_17" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_17"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_18" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_18"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_19" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_19"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_2" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_2"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_20" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_20"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_21" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_21"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_22" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_22"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_23" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_23"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_24" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_24"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_25" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_25"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_26" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_26"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_27" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_27"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_28" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_28"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_29" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_29"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_3" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_3"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_30" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_30"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_31" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_31"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_32" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_32"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_33" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_33"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_34" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_34"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_35" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_35"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_36" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_36"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_37" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_37"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_38" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_38"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_39" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_39"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_4"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_40" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_40"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_41" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_41"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_42" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_42"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_43" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_43"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_44" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_44"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_45" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_45"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_46" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_46"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_47" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_47"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_48" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_48"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_5" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_5"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_6" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_6"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_7" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_7"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_8" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_8"/>
+    <geom name="field_half_cubic_stepfields_cubic_half_step_9" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 0 1" mesh="field_half_cubic_stepfields_cubic_half_step_9"/>
+    <geom name="field_half_cubic_stepfields_floors_1" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_floors_1"/>
+    <geom name="field_half_cubic_stepfields_floors_2" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_floors_2"/>
+    <geom name="field_half_cubic_stepfields_floors_3" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_floors_3"/>
+    <geom name="field_half_cubic_stepfields_floors_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_floors_4"/>
+    <geom name="field_half_cubic_stepfields_lane_railings_1" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_lane_railings_1"/>
+    <geom name="field_half_cubic_stepfields_lane_railings_10" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_lane_railings_10"/>
+    <geom name="field_half_cubic_stepfields_lane_railings_11" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_lane_railings_11"/>
+    <geom name="field_half_cubic_stepfields_lane_railings_12" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_lane_railings_12"/>
+    <geom name="field_half_cubic_stepfields_lane_railings_13" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_lane_railings_13"/>
+    <geom name="field_half_cubic_stepfields_lane_railings_2" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_lane_railings_2"/>
+    <geom name="field_half_cubic_stepfields_lane_railings_3" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_lane_railings_3"/>
+    <geom name="field_half_cubic_stepfields_lane_railings_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_lane_railings_4"/>
+    <geom name="field_half_cubic_stepfields_lane_railings_5" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_lane_railings_5"/>
+    <geom name="field_half_cubic_stepfields_lane_railings_6" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_lane_railings_6"/>
+    <geom name="field_half_cubic_stepfields_lane_railings_7" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_lane_railings_7"/>
+    <geom name="field_half_cubic_stepfields_lane_railings_8" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_lane_railings_8"/>
+    <geom name="field_half_cubic_stepfields_lane_railings_9" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_half_cubic_stepfields_lane_railings_9"/>
+    <geom name="floor" size="20 20 0.1" type="plane"/>
+    <light pos="0 0 10" type="directional"/>
+  </worldbody>
+</mujoco>

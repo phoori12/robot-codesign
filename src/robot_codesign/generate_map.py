@@ -52,19 +52,40 @@ def generate_map(mesh_dir: Path, out_xml: Path) -> None:
 
     for f, name in zip(stl_files, names):
         spec.add_mesh(name=name, file=str(f))
-        if "floors" in name or "railings" in name:
+        if "floors" in name or "railings" in name or "thin_osb" in name:
             spec.worldbody.add_geom(
                 name=name,
                 type=mujoco.mjtGeom.mjGEOM_MESH,
                 meshname=name,
                 rgba=rgb255(216, 181, 137, 1.0),  # light brown osb 
             )
-        elif "lumber" in name:
+        elif "lumber" in name or "pitch" in name:
             spec.worldbody.add_geom(
                 name=name,
                 type=mujoco.mjtGeom.mjGEOM_MESH,
                 meshname=name,
                 rgba=rgb255(152, 107, 65, 1.0),   # medium brown lumber
+            )
+        elif "pvc" in name:
+            spec.worldbody.add_geom(
+                name=name,
+                type=mujoco.mjtGeom.mjGEOM_MESH,
+                meshname=name,
+                rgba=rgb255(255, 255, 255, 1.0),   # medium brown lumber
+            )
+        elif "half_step" in name:
+            spec.worldbody.add_geom(
+                name=name,
+                type=mujoco.mjtGeom.mjGEOM_MESH,
+                meshname=name,
+                rgba=rgb255(255, 255, 0, 1.0),   # medium brown lumber
+            )
+        elif "full_step" in name:
+            spec.worldbody.add_geom(
+                name=name,
+                type=mujoco.mjtGeom.mjGEOM_MESH,
+                meshname=name,
+                rgba=rgb255(255, 150, 0, 1.0),   # medium brown lumber
             )
         else:
             spec.worldbody.add_geom(

@@ -3,7 +3,7 @@ import numpy as np
 import mujoco
 import mujoco.viewer
 
-m = mujoco.MjModel.from_xml_path("xml/field_diagonal_krails.xml")
+m = mujoco.MjModel.from_xml_path("xml/field_half_cubic_stepfields.xml")
 d = mujoco.MjData(m)
 d.qpos[0:3] = [0, 0, 1]          # position
 d.qpos[3:7] = [1, 0, 0, 0]       # orientation (w, x, y, z)

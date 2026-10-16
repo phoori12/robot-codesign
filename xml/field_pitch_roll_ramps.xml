@@ -1,0 +1,110 @@
+<mujoco model="field_pitch_roll_ramps">
+  <include file="robot_tracked.xml"/>
+  <compiler angle="radian"/>
+
+  <asset>
+    <mesh name="field_pitch_roll_ramps_floors_1" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - floors-1.STL"/>
+    <mesh name="field_pitch_roll_ramps_floors_2" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - floors-2.STL"/>
+    <mesh name="field_pitch_roll_ramps_floors_3" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - floors-3.STL"/>
+    <mesh name="field_pitch_roll_ramps_floors_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - floors-4.STL"/>
+    <mesh name="field_pitch_roll_ramps_lane_railings_1" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - lane_railings-1.STL"/>
+    <mesh name="field_pitch_roll_ramps_lane_railings_10" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - lane_railings-10.STL"/>
+    <mesh name="field_pitch_roll_ramps_lane_railings_11" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - lane_railings-11.STL"/>
+    <mesh name="field_pitch_roll_ramps_lane_railings_12" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - lane_railings-12.STL"/>
+    <mesh name="field_pitch_roll_ramps_lane_railings_13" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - lane_railings-13.STL"/>
+    <mesh name="field_pitch_roll_ramps_lane_railings_2" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - lane_railings-2.STL"/>
+    <mesh name="field_pitch_roll_ramps_lane_railings_3" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - lane_railings-3.STL"/>
+    <mesh name="field_pitch_roll_ramps_lane_railings_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - lane_railings-4.STL"/>
+    <mesh name="field_pitch_roll_ramps_lane_railings_5" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - lane_railings-5.STL"/>
+    <mesh name="field_pitch_roll_ramps_lane_railings_6" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - lane_railings-6.STL"/>
+    <mesh name="field_pitch_roll_ramps_lane_railings_7" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - lane_railings-7.STL"/>
+    <mesh name="field_pitch_roll_ramps_lane_railings_8" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - lane_railings-8.STL"/>
+    <mesh name="field_pitch_roll_ramps_lane_railings_9" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - lane_railings-9.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_1_pitch_roll_ramp_3" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-1 pitch_roll_ramp-3.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_1_pitch_roll_ramp_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-1 pitch_roll_ramp-4.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_1_pitch_roll_ramp_5" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-1 pitch_roll_ramp-5.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_1_pitch_roll_ramp_6" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-1 pitch_roll_ramp-6.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_2_pitch_roll_ramp_3" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-2 pitch_roll_ramp-3.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_2_pitch_roll_ramp_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-2 pitch_roll_ramp-4.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_2_pitch_roll_ramp_5" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-2 pitch_roll_ramp-5.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_2_pitch_roll_ramp_6" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-2 pitch_roll_ramp-6.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_3_pitch_roll_ramp_3" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-3 pitch_roll_ramp-3.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_3_pitch_roll_ramp_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-3 pitch_roll_ramp-4.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_3_pitch_roll_ramp_5" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-3 pitch_roll_ramp-5.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_3_pitch_roll_ramp_6" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-3 pitch_roll_ramp-6.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_4_pitch_roll_ramp_3" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-4 pitch_roll_ramp-3.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_4_pitch_roll_ramp_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-4 pitch_roll_ramp-4.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_4_pitch_roll_ramp_5" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-4 pitch_roll_ramp-5.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_4_pitch_roll_ramp_6" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-4 pitch_roll_ramp-6.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_5_pitch_roll_ramp_3" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-5 pitch_roll_ramp-3.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_5_pitch_roll_ramp_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-5 pitch_roll_ramp-4.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_5_pitch_roll_ramp_5" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-5 pitch_roll_ramp-5.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_5_pitch_roll_ramp_6" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-5 pitch_roll_ramp-6.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_6_pitch_roll_ramp_3" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-6 pitch_roll_ramp-3.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_6_pitch_roll_ramp_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-6 pitch_roll_ramp-4.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_6_pitch_roll_ramp_5" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-6 pitch_roll_ramp-5.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_6_pitch_roll_ramp_6" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-6 pitch_roll_ramp-6.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_7_pitch_roll_ramp_3" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-7 pitch_roll_ramp-3.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_7_pitch_roll_ramp_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-7 pitch_roll_ramp-4.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_7_pitch_roll_ramp_5" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-7 pitch_roll_ramp-5.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_7_pitch_roll_ramp_6" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-7 pitch_roll_ramp-6.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_8_pitch_roll_ramp_3" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-8 pitch_roll_ramp-3.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_8_pitch_roll_ramp_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-8 pitch_roll_ramp-4.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_8_pitch_roll_ramp_5" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-8 pitch_roll_ramp-5.STL"/>
+    <mesh name="field_pitch_roll_ramps_pitch_ramp_utils_8_pitch_roll_ramp_6" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/field_pitch_roll_ramps/field_pitch_roll_ramps - pitch_ramp_utils-8 pitch_roll_ramp-6.STL"/>
+  </asset>
+
+  <worldbody>
+    <geom name="field_pitch_roll_ramps_floors_1" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_floors_1"/>
+    <geom name="field_pitch_roll_ramps_floors_2" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_floors_2"/>
+    <geom name="field_pitch_roll_ramps_floors_3" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_floors_3"/>
+    <geom name="field_pitch_roll_ramps_floors_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_floors_4"/>
+    <geom name="field_pitch_roll_ramps_lane_railings_1" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_lane_railings_1"/>
+    <geom name="field_pitch_roll_ramps_lane_railings_10" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_lane_railings_10"/>
+    <geom name="field_pitch_roll_ramps_lane_railings_11" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_lane_railings_11"/>
+    <geom name="field_pitch_roll_ramps_lane_railings_12" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_lane_railings_12"/>
+    <geom name="field_pitch_roll_ramps_lane_railings_13" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_lane_railings_13"/>
+    <geom name="field_pitch_roll_ramps_lane_railings_2" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_lane_railings_2"/>
+    <geom name="field_pitch_roll_ramps_lane_railings_3" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_lane_railings_3"/>
+    <geom name="field_pitch_roll_ramps_lane_railings_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_lane_railings_4"/>
+    <geom name="field_pitch_roll_ramps_lane_railings_5" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_lane_railings_5"/>
+    <geom name="field_pitch_roll_ramps_lane_railings_6" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_lane_railings_6"/>
+    <geom name="field_pitch_roll_ramps_lane_railings_7" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_lane_railings_7"/>
+    <geom name="field_pitch_roll_ramps_lane_railings_8" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_lane_railings_8"/>
+    <geom name="field_pitch_roll_ramps_lane_railings_9" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.847059 0.709804 0.537255 1" mesh="field_pitch_roll_ramps_lane_railings_9"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_1_pitch_roll_ramp_3" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_1_pitch_roll_ramp_3"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_1_pitch_roll_ramp_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_1_pitch_roll_ramp_4"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_1_pitch_roll_ramp_5" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_1_pitch_roll_ramp_5"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_1_pitch_roll_ramp_6" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_1_pitch_roll_ramp_6"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_2_pitch_roll_ramp_3" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_2_pitch_roll_ramp_3"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_2_pitch_roll_ramp_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_2_pitch_roll_ramp_4"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_2_pitch_roll_ramp_5" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_2_pitch_roll_ramp_5"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_2_pitch_roll_ramp_6" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_2_pitch_roll_ramp_6"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_3_pitch_roll_ramp_3" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_3_pitch_roll_ramp_3"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_3_pitch_roll_ramp_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_3_pitch_roll_ramp_4"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_3_pitch_roll_ramp_5" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_3_pitch_roll_ramp_5"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_3_pitch_roll_ramp_6" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_3_pitch_roll_ramp_6"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_4_pitch_roll_ramp_3" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_4_pitch_roll_ramp_3"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_4_pitch_roll_ramp_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_4_pitch_roll_ramp_4"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_4_pitch_roll_ramp_5" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_4_pitch_roll_ramp_5"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_4_pitch_roll_ramp_6" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_4_pitch_roll_ramp_6"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_5_pitch_roll_ramp_3" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_5_pitch_roll_ramp_3"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_5_pitch_roll_ramp_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_5_pitch_roll_ramp_4"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_5_pitch_roll_ramp_5" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_5_pitch_roll_ramp_5"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_5_pitch_roll_ramp_6" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_5_pitch_roll_ramp_6"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_6_pitch_roll_ramp_3" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_6_pitch_roll_ramp_3"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_6_pitch_roll_ramp_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_6_pitch_roll_ramp_4"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_6_pitch_roll_ramp_5" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_6_pitch_roll_ramp_5"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_6_pitch_roll_ramp_6" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_6_pitch_roll_ramp_6"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_7_pitch_roll_ramp_3" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_7_pitch_roll_ramp_3"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_7_pitch_roll_ramp_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_7_pitch_roll_ramp_4"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_7_pitch_roll_ramp_5" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_7_pitch_roll_ramp_5"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_7_pitch_roll_ramp_6" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_7_pitch_roll_ramp_6"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_8_pitch_roll_ramp_3" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_8_pitch_roll_ramp_3"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_8_pitch_roll_ramp_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_8_pitch_roll_ramp_4"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_8_pitch_roll_ramp_5" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_8_pitch_roll_ramp_5"/>
+    <geom name="field_pitch_roll_ramps_pitch_ramp_utils_8_pitch_roll_ramp_6" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.596078 0.419608 0.254902 1" mesh="field_pitch_roll_ramps_pitch_ramp_utils_8_pitch_roll_ramp_6"/>
+    <geom name="floor" size="20 20 0.1" type="plane"/>
+    <light pos="0 0 10" type="directional"/>
+  </worldbody>
+</mujoco>
