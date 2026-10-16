@@ -1,0 +1,61 @@
+<mujoco model="field_diagonal_krails">
+  <compiler angle="radian"/>
+
+  <asset>
+    <mesh name="field_diagonal_krails_floors_1" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - floors-1.STL"/>
+    <mesh name="field_diagonal_krails_floors_2" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - floors-2.STL"/>
+    <mesh name="field_diagonal_krails_floors_3" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - floors-3.STL"/>
+    <mesh name="field_diagonal_krails_floors_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - floors-4.STL"/>
+    <mesh name="field_diagonal_krails_krails_lumber_11" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - krails-lumber-11.STL"/>
+    <mesh name="field_diagonal_krails_krails_lumber_12" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - krails-lumber-12.STL"/>
+    <mesh name="field_diagonal_krails_krails_lumber_13" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - krails-lumber-13.STL"/>
+    <mesh name="field_diagonal_krails_krails_lumber_14" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - krails-lumber-14.STL"/>
+    <mesh name="field_diagonal_krails_krails_lumber_15" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - krails-lumber-15.STL"/>
+    <mesh name="field_diagonal_krails_krails_lumber_16" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - krails-lumber-16.STL"/>
+    <mesh name="field_diagonal_krails_krails_lumber_17" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - krails-lumber-17.STL"/>
+    <mesh name="field_diagonal_krails_krails_lumber_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - krails-lumber-4.STL"/>
+    <mesh name="field_diagonal_krails_lane_railings_1" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - lane_railings-1.STL"/>
+    <mesh name="field_diagonal_krails_lane_railings_10" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - lane_railings-10.STL"/>
+    <mesh name="field_diagonal_krails_lane_railings_11" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - lane_railings-11.STL"/>
+    <mesh name="field_diagonal_krails_lane_railings_12" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - lane_railings-12.STL"/>
+    <mesh name="field_diagonal_krails_lane_railings_13" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - lane_railings-13.STL"/>
+    <mesh name="field_diagonal_krails_lane_railings_2" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - lane_railings-2.STL"/>
+    <mesh name="field_diagonal_krails_lane_railings_3" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - lane_railings-3.STL"/>
+    <mesh name="field_diagonal_krails_lane_railings_4" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - lane_railings-4.STL"/>
+    <mesh name="field_diagonal_krails_lane_railings_5" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - lane_railings-5.STL"/>
+    <mesh name="field_diagonal_krails_lane_railings_6" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - lane_railings-6.STL"/>
+    <mesh name="field_diagonal_krails_lane_railings_7" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - lane_railings-7.STL"/>
+    <mesh name="field_diagonal_krails_lane_railings_8" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - lane_railings-8.STL"/>
+    <mesh name="field_diagonal_krails_lane_railings_9" file="/Users/wrp-mac/Desktop/robot-codesign/meshes/diagonal_krails/field_diagonal_krails - lane_railings-9.STL"/>
+  </asset>
+
+  <worldbody>
+    <geom name="field_diagonal_krails_floors_1" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.645873 0.388851 0.228681 1" mesh="field_diagonal_krails_floors_1"/>
+    <geom name="field_diagonal_krails_floors_2" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.211569 0.769289 0.838929 1" mesh="field_diagonal_krails_floors_2"/>
+    <geom name="field_diagonal_krails_floors_3" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.624645 0.710648 0.580537 1" mesh="field_diagonal_krails_floors_3"/>
+    <geom name="field_diagonal_krails_floors_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.854551 0.771097 0.201917 1" mesh="field_diagonal_krails_floors_4"/>
+    <geom name="field_diagonal_krails_krails_lumber_11" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.800183 0.22351 0.710759 1" mesh="field_diagonal_krails_krails_lumber_11"/>
+    <geom name="field_diagonal_krails_krails_lumber_12" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.322959 0.804225 0.579023 1" mesh="field_diagonal_krails_krails_lumber_12"/>
+    <geom name="field_diagonal_krails_krails_lumber_13" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.409798 0.495881 0.219824 1" mesh="field_diagonal_krails_krails_lumber_13"/>
+    <geom name="field_diagonal_krails_krails_lumber_14" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.286998 0.669437 0.653033 1" mesh="field_diagonal_krails_krails_lumber_14"/>
+    <geom name="field_diagonal_krails_krails_lumber_15" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.63077 0.468574 0.898047 1" mesh="field_diagonal_krails_krails_lumber_15"/>
+    <geom name="field_diagonal_krails_krails_lumber_16" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.886585 0.679879 0.655321 1" mesh="field_diagonal_krails_krails_lumber_16"/>
+    <geom name="field_diagonal_krails_krails_lumber_17" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.681913 0.472245 0.294568 1" mesh="field_diagonal_krails_krails_lumber_17"/>
+    <geom name="field_diagonal_krails_krails_lumber_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.705042 0.567748 0.417169 1" mesh="field_diagonal_krails_krails_lumber_4"/>
+    <geom name="field_diagonal_krails_lane_railings_1" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.540085 0.822641 0.85383 1" mesh="field_diagonal_krails_lane_railings_1"/>
+    <geom name="field_diagonal_krails_lane_railings_10" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.450457 0.600071 0.425309 1" mesh="field_diagonal_krails_lane_railings_10"/>
+    <geom name="field_diagonal_krails_lane_railings_11" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.61601 0.436538 0.474133 1" mesh="field_diagonal_krails_lane_railings_11"/>
+    <geom name="field_diagonal_krails_lane_railings_12" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.823192 0.35901 0.636231 1" mesh="field_diagonal_krails_lane_railings_12"/>
+    <geom name="field_diagonal_krails_lane_railings_13" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.258811 0.782851 0.750969 1" mesh="field_diagonal_krails_lane_railings_13"/>
+    <geom name="field_diagonal_krails_lane_railings_2" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.367559 0.813539 0.240998 1" mesh="field_diagonal_krails_lane_railings_2"/>
+    <geom name="field_diagonal_krails_lane_railings_3" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.435282 0.305196 0.515238 1" mesh="field_diagonal_krails_lane_railings_3"/>
+    <geom name="field_diagonal_krails_lane_railings_4" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.757427 0.36145 0.236415 1" mesh="field_diagonal_krails_lane_railings_4"/>
+    <geom name="field_diagonal_krails_lane_railings_5" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.483186 0.338959 0.263527 1" mesh="field_diagonal_krails_lane_railings_5"/>
+    <geom name="field_diagonal_krails_lane_railings_6" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.606233 0.409087 0.670396 1" mesh="field_diagonal_krails_lane_railings_6"/>
+    <geom name="field_diagonal_krails_lane_railings_7" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.339661 0.859479 0.455577 1" mesh="field_diagonal_krails_lane_railings_7"/>
+    <geom name="field_diagonal_krails_lane_railings_8" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.273847 0.640376 0.849008 1" mesh="field_diagonal_krails_lane_railings_8"/>
+    <geom name="field_diagonal_krails_lane_railings_9" pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="0.508264 0.868213 0.549927 1" mesh="field_diagonal_krails_lane_railings_9"/>
+    <geom name="floor" size="20 20 0.1" type="plane"/>
+    <light pos="0 0 10" type="directional"/>
+  </worldbody>
+</mujoco>
