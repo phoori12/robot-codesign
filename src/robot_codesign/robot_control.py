@@ -3,8 +3,11 @@ import numpy as np
 import mujoco
 import mujoco.viewer
 
-m = mujoco.MjModel.from_xml_path("stairs.xml")
+m = mujoco.MjModel.from_xml_path("xml/field_diagonal_krails.xml")
 d = mujoco.MjData(m)
+d.qpos[0:3] = [0, 0, 1]          # position
+d.qpos[3:7] = [1, 0, 0, 0]       # orientation (w, x, y, z)
+
 m.flg_surfacevel = True
 
 R = m.geom_size[m.geom("left_drive_pulley_geom").id][0]                        # drive pulley radius [m]
@@ -105,6 +108,8 @@ with mujoco.viewer.launch_passive(m, d, key_callback=on_key) as viewer:
             state["v"] = 0.0
             state["turn"] = 0
             state["reset"] = False
+            d.qpos[0:3] = [0, 0, 1]          # position
+            d.qpos[3:7] = [1, 0, 0, 0]       # orientation (w, x, y, z)
         for _ in range(int(FRAME / m.opt.timestep)):   # several physics steps per frame
             mujoco.mj_step(m, d)
         viewer.sync()
