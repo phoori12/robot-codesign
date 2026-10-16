@@ -1,0 +1,11 @@
+<mujoco model="field_diagonal_krails">
+  <compiler angle="radian"/>
+
+  <asset>
+    <mesh name="map_diagonal_krails" content_type="model/stl" file="../meshes/map_diagonal_krails.STL"/>
+  </asset>
+
+  <worldbody>
+    <geom pos="0 0 0" quat="1 0 0 0" type="mesh" rgba="1 1 1 1" mesh="map_diagonal_krails"/>
+  </worldbody>
+</mujoco>
